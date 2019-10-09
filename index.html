@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>youhuo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="dist/build.js"></script>
+    <script type="text/javascript">
+    function ss() {
+	    var styleN = document.createElement("style");
+	    var width = document.documentElement.clientWidth/16;
+	    styleN.innerHTML = 'html{font-size:'+width+'px}';
+	    document.head.appendChild(styleN)
+		}
+   	ss();
+    window.onresize = function(){
+      ss()
+    }
+    </script>
+  </body>
+</html>

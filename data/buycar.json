@@ -1,0 +1,30 @@
+{
+	"buycar":[
+		{
+			"pro":[
+				{
+					"proimg":"./data/images//product/pro1/pro1.jpg",
+					"producttitle":"Ron English x APPortfolio x Made by Monsters「玫瑰金Police Grin」黄色",
+					"num":"2",
+					"price":"3298",
+					"color":"原牙色",
+					"size":"F",
+					"index":0
+				}
+			]		
+		},
+		{
+			"pro":[
+				{
+					"proimg":"./data/images//product/pro2/pro1.jpg",
+					"producttitle":"【有货独家】THE HUNDREDS X COMBACK 迷彩单肩手提包",
+					"num":"1",
+					"price":"398",
+					"color":"彩色",
+					"size":"F",
+					"index":1
+				}
+			]		
+		}
+	]
+}
