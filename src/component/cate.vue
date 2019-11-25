@@ -7,11 +7,11 @@
 			</router-link>
 		</div>
 		<div class="nav">
-			<ul class="navtop clearfix">
+			<ul class="navtop">
 				<li @click="change(1)" :class="{black:a==1}"><span>Boys</span></li>
 				<li @click="change(2)" :class="{black:a==2}"><span>Girls</span></li>
 				<li @click="change(3)" :class="{black:a==3}"><span>Kids</span></li>
-				<li @click="change(4)" :class="{black:a==4}"><span>Lifestyle</span></li>
+				<li @click="change(4)" :class="{black:a==4}"><span class="nopadding">Lifestyle</span></li>
 			</ul>
 		</div>
 		<div class="hidechildnav">
@@ -147,15 +147,15 @@
 	.navtop{
 		height: 1.75rem;
 		border-bottom: 1px solid #e6e6e6;
+		display: flex;
+		justify-content: space-around;
 	}
 	.navtop li{
-		float: left;
 		display: block;
 		box-sizing: border-box;
 		float: left;
 		height: 100%;
 		padding: .5rem 0;
-		width: 25%;
 		text-align: center;
 		color: #999;
 	}
@@ -166,6 +166,11 @@
 		line-height: .75rem;
 		font-size: 15PX;
 		border-right: 1px solid #e6e6e6;
+		padding-right: 20px;
+	}
+	.nopadding{
+		border-right: 0 !important;
+		padding-right: 0 !important;
 	}
 	.hidechildnav{
 		
@@ -213,5 +218,37 @@
 	}
 	.withe{
 		background-color: #fff;
+	}
+	.foottab{
+		position: fixed;
+		left: 50%;
+		bottom: 0;
+		margin-left: -8rem;
+		width: 100%;
+		height: 2.5rem;
+		max-width: 16rem;
+		padding-top: .5rem;
+		box-sizing: border-box;
+		background: #fff;
+		border-top: 1px solid #b0b0b0;
+		z-index: 3;
+	}
+	.foottab a{
+		float: left;
+		width: 20%;
+		text-align: center;
+		color: #b0b0b0;
+	}
+	.foottab .router-link-active{
+		color: #414141;
+	}
+	.foottabicon{
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	.foottabname{
+		margin-top: .25rem;
+		font-size: 12PX;
+		line-height: 1;
 	}
 </style>
